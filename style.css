@@ -1,0 +1,164 @@
+/* Estilos generales (por defecto para escritorio) */
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #c9bcbc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c3d7ee;
+    height: 8%;
+    color: rgb(61, 57, 172);
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 250px;
+    width: 80%;
+    margin: auto;
+}
+
+.card, .card2 {
+    background-color: #D99DA5;
+    width: 25%; /* Ajusta el tamaño para pantallas grandes */
+    padding: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+    margin-top: 5;
+    color: #116CE4;
+    
+}
+
+.card h2, .card2 h1 {
+    text-align: center;
+    color: #5e6845;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.card2 h1{
+    text-align: center;
+}
+
+.card p, .card2 p {
+    margin: 2;
+    padding: 2px 0;
+    line-height: 1.2;
+}
+
+img {
+    width: 140px;
+    height:150px;
+    border-radius: 60px;
+    box-shadow: 0px 4px 6px rgba(133, 65, 65, 0.2);
+    align-self: center;
+    margin-top: 10px;
+}
+
+.card2 img {
+    width: 140px;
+    height:150px;
+    border-radius: 60px;
+    box-shadow: 0px 4px 6px rgba(133, 65, 65, 0.2);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    align-self: center;
+}
+
+.footer {
+    background-color: #1FE3D6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Media Query para tabletas (pantallas de hasta 1024px) */
+@media (max-width: 1024px) {
+    nav {
+        font-size: 35px; /* Reduce el tamaño de la fuente */
+        padding: 8px 15px; /* Ajusta el espaciado */
+    }
+
+    .container {
+        gap: 20px; /* Menor espacio entre tarjetas */
+        width: 90%; /* Ajusta el contenedor para que ocupe un 90% del ancho */
+    }
+
+    .card, .card2 {
+        width: 45%; /* Ajusta el tamaño de las tarjetas */
+    }
+
+    img {
+        width: 120px; /* Reduce el tamaño de las imágenes */
+        height: 120px;
+    }
+}
+
+/* Media Query para móviles (pantallas de hasta 768px) */
+@media (max-width: 768px) {
+    nav {
+        font-size: 25px; /* Reduce aún más el tamaño de la fuente */
+        padding: 6px 12px; /* Ajuste del padding */
+    }
+
+    .container {
+        flex-direction: column; /* Coloca las tarjetas en una sola columna */
+        gap: 20px; /* Reduce el espacio entre tarjetas */
+        width: 95%; /* Ajusta el contenedor para que ocupe un 95% */
+    }
+
+    .card, .card2 {
+        width: 100%; /* Las tarjetas ocupan el 100% del ancho del contenedor */
+    }
+
+    img {
+        width: 100px; /* Ajusta el tamaño de las imágenes */
+        height: 100px;
+    }
+
+    .footer {
+        padding: 15px; /* Aumenta el padding en el pie de página */
+    }
+}
+
+/* Media Query para pantallas pequeñas (móviles muy pequeños) de hasta 480px */
+@media (max-width: 480px) {
+    nav {
+        font-size: 20px; /* Más pequeño en pantallas muy pequeñas */
+    }
+
+    .card, .card2 {
+        width: 100%; /* Asegura que las tarjetas ocupen todo el ancho */
+    }
+
+    img {
+        width: 80px; /* Imágenes más pequeñas */
+        height: 80px;
+    }
+
+    .footer {
+        padding: 10px; /* Ajuste del padding */
+    }
+}
